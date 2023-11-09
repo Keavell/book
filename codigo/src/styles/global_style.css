@@ -1,0 +1,72 @@
+:root {
+    --site-background-color: #1d151599;
+    --site-background-image: url('../../assets/images/background.jpg');
+    --site-button-color: grey;
+    --site-button-hover-color: white;
+    --book-mark: #1d1515;
+    --background-text: rgb(56, 51, 38);
+}
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image: var(--site-background-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    background-color: var(--site-background-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+audio{
+    width: 15vw;
+    margin: 10px;
+    position: absolute;
+    bottom:  0;
+    right: 0;
+    transition: 0.3s;
+}
+
+audio:hover{
+    width: 30vw;
+    transition: 0.3s;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+i {
+    font-size: 50px;
+    color: var(--site-button-color);
+}
+
+button:hover i {
+    color: var(--site-button-hover-color);
+}
+
+img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
